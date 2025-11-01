@@ -1,3 +1,10 @@
+<%-- 
+    Document   : about
+    Created on : 1 nov 2025, 4:15:26 p.m.
+    Author     : chris
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,16 +15,7 @@
     </head>
 
     <body>
-        <nav>
-            <a href="./index.html">
-                <img src="./imgs/nebula-03.svg" height="80px">
-            </a>
-            <ul>
-                <li><a href="./about.html"> Nosotros </a></li>
-                <li><a href="./comunidad.html">Comunidad</a></li>
-                <li><a href="./registro.html">Registrarse</a></li>
-            </ul>
-        </nav>
+        <%@ include file ="/WEB-INF/fragments/navbar.jspf" %>
         <header>
             <h1>Acerca de nosotros</h1>
             <section>
@@ -78,19 +76,7 @@
             </section>
         </main>
         <br>
-        <footer>
-            <div>
-                Siguenos en nuestras redes.
-                <div>
-                    <a href="www.instagram.com" target="blank">Instagram</a>
-                    <a href="www.facebook.com">Facebook</a>
-                    <a href="www.tiktok.com">Tiktok</a>
-                </div>
-            </div>
-
-            <h5>Copyright Nebula 2025</h5>
-            <a href="./tyc.html" target="_blank">Términos y condiciones</a>
-        </footer>
+        <%@ include file ="/WEB-INF/fragments/footer.jspf" %>
     </body>
 
 </html>
