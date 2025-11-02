@@ -22,38 +22,64 @@
             <h1>Tu musica en la <span>nube</span> y en tu <span>espacio</span></h1>
         </header>
         <main>
-            <section name="news">
+            <div class="news-contenedor">
                 <article>
                     <img
-                        src="https://akns-images.eonline.com/eol_images/Entire_Site/2021111/rs_1200x1200-210211101603-1200-Taylor_Swift-NME_Awards_2020-gj.jpg?fit=around|1080:1080&output-quality=90&crop=1080:1080;center,top"
-                        width="250px" height="250px">
-                    <h3>Taylor Swift en nueva era.</h3>
+                        src="https://www.infobae.com/resizer/v2/YNBMHZXXABES3BMNN3IL6NXBTU.jpg?auth=080fff4796edcbc64427418d2aa20ecb65480134d95d38af868d8ab9993d5e23"
+                        class="news-img">
+                    <h3 class="h3-titulo">Taylor Swift en su nueva era.</h3>
                     <p>El nuevo disco de Taylor, <i>"The life of a showgirl"</i> saldra a la venta el 3 de octubre.</p>
                 </article>
 
                 <article>
                     <img
-                        src="https://tse2.mm.bing.net/th/id/OIP.ESCuridYLhd1LQLG1k3iqwHaHa?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3"
-                        width="250px" height="250px">
+                        src="https://media.gq.com.mx/photos/66cdf89fe21e890818a07d6d/4:3/w_2248,h_1686,c_limit/Oasis.jpg"
+                        class="news-img">
                     <div>
-                        <h3>Oasis.</h3>
-                        <h4>Revelan setlist completo para sus próximos conciertos.</h4>
+                        <h3 class="h3-titulo">Oasis.</h3>
+                        <h4>Revelan el setlist completo de la banda. Los hermanos Liam y Noel Gallagher se reencontrarán
+                            con sus fans mexicanos y traéran un setlist que promete emocionar al público.</h4>
                     </div>
-
-                    <p>Los hermanos Liam y Noel Gallagher se reencontrarán con sus fans mexicanos y
-                        traerán un setlist que promete emocionar hasta las lágrimas</p>
                 </article>
 
                 <article>
-                    <img src="https://wallpaperaccess.com/full/11144560.jpg" width="250px" height="250px">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGEb136-HjI2sneKvu9KOgIDj-dbkBc3MUYA&s" 
+                         class="news-img">
                     <div>
-                        <h3>Olivia Rodrigo.</h3>
-                        <h4>Revela que su nuevo album saldra a finales de Noviembre con 5</h4>
+                        <h3 class="h3-titulo">Los Reztos tocan tributo a Marea</h3>
+                        <h4>Un éxito el tributo en Ciudad Obregón.</h4>
                     </div>
-                    <p>"Mis fans no estan listos" comento la artista entre risas, revelando el nombre de una de las canciones: "Blue
-                        love"</p>
                 </article>
-            </section>
+
+                <article>
+                    <img src="https://lastfm.freetls.fastly.net/i/u/ar0/8771c59006a609aec6ea2d1a6802b98a.jpg" 
+                         class="news-img">
+                    <div>
+                        <h3 class="h3-titulo">The 1975 NO saldrá de gira con su nuevo disco este 2025</h3>
+                        <h4>El manager de The 1975 confirmó que la banda lanzará un nuevo disco, pero no saldrán de gira 
+                            este 2025 y sólo los podrán ver en Glastonbury.</h4>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Sabino.png" 
+                         class="news-img">
+                    <div>
+                        <h3 class="h3-titulo">Sabino se une al Pachuca Rock Fest 2025</h3>
+                        <h4>Pachuca Rock Fest en su exta edición será el 2 de agosto de 2025.</h4>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="https://s3.eu-central-1.amazonaws.com/images.jacksonlive.es/upload/concerts/hd/453891752589773.jpg" 
+                         class="news-img">
+                    <div>
+                        <h3 class="h3-titulo">All Time Low lanza su nuevo disco Everyone's Talking.</h3>
+                        <h4>La banda de Baltimore lanza un nuevo álbum con un estilo fresco, sin dejar de lado su esencia.</h4>
+                    </div>
+                </article>
+
+            </div>
         </main>
         <%@ include file ="/WEB-INF/fragments/footer.jspf" %>
     </body>

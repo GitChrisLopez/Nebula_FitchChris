@@ -9,272 +9,344 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 @import url(./global.css);
 
 body {
-  background-color: var(--bg-color-dark);
-  color: var(--text-color-dark);
-  font-family: "SUSE Mono", sans-serif;
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    font-family: "SUSE Mono", sans-serif;
 }
 
 main {
-  padding: 30px 0; /* espacio arriba y abajo */
+    padding: 30px 0; /* espacio arriba (30px)    abajo (0) */
 }
 
 nav {
-  padding: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav .logo {
-  margin-right: 50px;
+    margin-right: 80px;
+    padding-left: 15px;
 }
 
 nav .logo img {
-  height: 70px;
+    height: 70px;
 }
 
 nav a {
-  font-family: "Alan sans", sans serif;
-  color: var(--nav-links);
-  font-weight: 600;
+    font-family: "Roboto", sans serif;
+    color: var(--nav-links);
+    font-weight: 600;
+    padding-right: 20px;
+    font-size: 20px;
 }
 
 nav ul {
-  display: inline;
+    display: inline;
 }
 
 nav li {
-  list-style-type: none;
-  display: inline;
-  margin-left: 25px;
+    list-style-type: none;
+    display: inline;
+    margin-left: 35px;
 }
 
 header {
-  position: relative;
+    position: relative;
 }
 
 header img {
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
 }
 
 .headerImg2 {
-  width: 100%;
-  height: 50vh;
-  object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.headerImg3 {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
 }
 
 h1 {
-  margin: 0;
-  position: absolute;
-  top: 30%;
-  left: 50px;
-  font-family: "Alan Sans", sans-serif;
-  width: 60%;
-  font-size: 4rem;
-  text-shadow: 0.1em 0.1em 0.2em black;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    font-family: "Alan Sans", sans-serif;
+    width: 60%;
+    font-size: 4rem;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 header span {
-  font-style: italic;
-  font-weight: 500;
-  color: var(--hightlight);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--hightlight);
 }
 
-#news {
-  margin-top: 30px;
-  padding: 20px;
-  display: inline;
+
+.news-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    text-align: center;
 }
 
-article {
-  width: 30%;
-  min-width: 270px;
-  padding: 10px;
+.about-contenedor{
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-article img {
-  display: block;
-  margin: auto;
-  width: 80%;
-  max-width: 300px;
-  object-fit: cover;
-  aspect-ratio: 1 / 1;
+.news-img{
+    width:350px;
+    height:280px;
+}
+
+.membresia{
+    text-align: left;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.precio{
+    color:var(--highlight);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.iframe-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-div p{
+    font-size: 18px;
+}
+
+.inputNewsletter{
+    background-color: white;
+    color:#6145D2;
+    height: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.btnFormNews{
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    height: 25px;
+    width: 90px;
+    font-size: 16px;
+}
+
+.h2-about{
+    text-align: center;
+    font-size: 40px;
+}
+
+.h3-titulo{
+    padding: 5px;
+    color:var(--highlight);
 }
 
 .tituloForm {
-  background-color: black;
-  margin: 10px 8px 10px 10px;
-  padding: 6px;
-  width: 96%;
-  border-radius: 10px;
-  font-family: system-ui;
+    background-color: black;
+    margin: 10px 8px 10px 10px;
+    padding: 6px;
+    width: 96%;
+    border-radius: 10px;
+    font-family: system-ui;
 }
 
 .registroForm {
-  margin: 0px 0px 10px 8px;
-  padding: 6px;
-  height: 70%;
-  width: 120vh;
-  background-color: #3e5577;
-  border-radius: 10px;
+    margin: 0px 0px 10px 8px;
+    padding: 6px;
+    height: 70%;
+    width: 120vh;
+    background-color: #3e5577;
+    border-radius: 10px;
 }
 
 .registroMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .labelForm {
-  margin: 15px 0px 10px 6px;
-  padding: 6px;
-  font-size: 18px;
-  font-family: system-ui;
+    margin: 15px 0px 10px 6px;
+    padding: 6px;
+    font-size: 18px;
+    font-family: system-ui;
 }
 
 .inputForm {
-  margin: 0px 0px 0px 6px;
-  padding: 6px;
-  width: 98%;
-  height: 22px;
-  font-family: system-ui;
-  font-size: 18px;
-  border-radius: 5px;
+    margin: 0px 0px 0px 6px;
+    padding: 6px;
+    width: 98%;
+    height: 22px;
+    font-family: system-ui;
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 .spanForm {
-  margin: 0px 0px 10px 10px;
-  padding: 6px;
-  font-family: system-ui;
-  font-size: 12px;
+    margin: 0px 0px 10px 10px;
+    padding: 6px;
+    font-family: system-ui;
+    font-size: 12px;
 }
 
 .selectForm {
-  margin: 0px 0px 0px 6px;
-  padding: 6px;
-  width: 98%;
-  height: 35px;
-  line-height: 35px;
-  font-family: system-ui;
-  font-size: 18px;
-  border-radius: 5px;
-  box-sizing: border-box;
+    margin: 0px 0px 0px 6px;
+    padding: 6px;
+    width: 98%;
+    height: 35px;
+    line-height: 35px;
+    font-family: system-ui;
+    font-size: 18px;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .dobForm {
-  margin: 0px 0px 0px 6px;
-  padding: 6px;
-  width: 98%;
-  height: 35px;
-  line-height: 35px;
-  font-family: system-ui;
-  font-size: 18px;
-  border-radius: 5px;
-  box-sizing: border-box;
+    margin: 0px 0px 0px 6px;
+    padding: 6px;
+    width: 98%;
+    height: 35px;
+    line-height: 35px;
+    font-family: system-ui;
+    font-size: 18px;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .inputForm:focus {
-  background-color: #edf67d;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+    background-color: #edf67d;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .radioForm {
-  margin: 10px 0px 0px 16px;
+    margin: 10px 0px 0px 16px;
 }
 .radioForm label {
-  margin-left: 1px;
-  padding: 0;
-  font-size: 18px;
-  vertical-align: middle;
+    margin-left: 1px;
+    padding: 0;
+    font-size: 18px;
+    vertical-align: middle;
 }
 
 .btnForm {
-  padding: 3px;
-  text-align: center;
-  font-size: 18px;
-  cursor: pointer;
+    padding: 3px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .botonesForm {
-  background-color: black;
-  margin: 10px 8px 10px 10px;
-  padding: 10px;
-  width: 96%;
-  border-radius: 10px;
-  font-family: system-ui;
+    background-color: black;
+    margin: 10px 8px 10px 10px;
+    padding: 10px;
+    width: 96%;
+    border-radius: 10px;
+    font-family: system-ui;
 }
 
 input:required:invalid,
 select:required:invalid {
-  border: 2px solid #e27e7c;
+    border: 2px solid #e27e7c;
 }
 
 .tituloComunidad {
-  text-align: left;
+    text-align: left;
 }
 
 .divComunidad {
-  background-color: #3e5577;
-  margin: 0px 0px 10px 8px;
-  padding: 6px;
-  height: 60vh;
-  padding-left: 25px;
-  width: 120vh;
-  border-radius: 7px;
-  border-style: solid;
-  border-width: 1.5px;
+    background-color: #3e5577;
+    margin: 0px 0px 10px 8px;
+    padding: 6px;
+    height: 60vh;
+    padding-left: 25px;
+    width: 120vh;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1.5px;
 }
 
 .thComunidad {
-  padding: 20px;
-  padding-left: 50px;
-  color: #f0b3ff;
-  font-size: 22px;
-  font-family: system-ui;
+    padding: 20px;
+    padding-left: 50px;
+    color: #f0b3ff;
+    font-size: 22px;
+    font-family: system-ui;
 }
 
 .imgComunidad {
-  margin: 5px;
-  height: 80px;
-  width: 80px;
-  border-radius: 10px;
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
 }
 
 .trComunidad1 {
-  font-size: 18px;
-  font-family: system-ui;
-  padding: 5px;
-  margin: 5px;
+    font-size: 18px;
+    font-family: system-ui;
+    padding: 5px;
+    margin: 5px;
 }
 
 .trComunidad2 {
-  font-size: 18px;
-  font-family: system-ui;
-  padding: 5px;
-  margin: 5px;
-  background-color: #6185ba;
+    font-size: 18px;
+    font-family: system-ui;
+    padding: 5px;
+    margin: 5px;
+    background-color: #6185ba;
 }
 
 .tdComunidad {
-  font-size: 18px;
-  font-family: system-ui;
-  padding: 5px;
-  margin: 5px;
-  padding-left: 30px;
-  text-align: center;
+    font-size: 18px;
+    font-family: system-ui;
+    padding: 5px;
+    margin: 5px;
+    padding-left: 30px;
+    text-align: center;
 }
 
 .emailC {
-  color: #f0b3ff;
-  text-decoration: underline;
+    color: #f0b3ff;
+    text-decoration: underline;
 }
 
 .pie {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
 }
 
